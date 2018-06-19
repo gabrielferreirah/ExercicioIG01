@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
  * @author Gabriel de Oliveira Ferreira
@@ -15,7 +16,7 @@ public class Exercicio01 implements Exercicio01BaseInterface {
     private JButton jButtonSalvar, jButtonCancelar;
     private JLabel jLabelNome, jLabelIdade, jLabelRaca, jLabelApelido, jLabelPreco, jLabelDescricao;
     private JTextArea jTextAreaNome, jTextAreaIdade, jTextAreaApelido, jTextAreapreco, jTextAreaDescricao;
-
+    private JTextField jTextFieldNome;
     public Exercicio01() {
         gerarTela();
         instanciarComponentes();
@@ -28,7 +29,7 @@ public class Exercicio01 implements Exercicio01BaseInterface {
     @Override
     public void gerarTela() {
         jFrame = new JFrame();
-        jFrame.setSize(600, 400);
+        jFrame.setSize(625, 425);
         jFrame.setLayout(null);
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -51,15 +52,15 @@ public class Exercicio01 implements Exercicio01BaseInterface {
     @Override
     public void gerarLocalizacoes() {
         jLabelNome.setLocation(10, 10);
-        jButtonSalvar.setLocation(10, 100);
-        jButtonCancelar.setLocation(100, 100);
+        jButtonSalvar.setLocation(450, 310);
+        jButtonCancelar.setLocation(160, 100);
     }
 
     @Override
     public void gerarDimensoes() {
-        jLabelNome.setSize(50, 35);
-        jButtonSalvar.setSize(100, 100);
-        jButtonCancelar.setSize(100, 100);
+        jLabelNome.setSize(50, 10);
+        jButtonSalvar.setSize(140, 70);
+        jButtonCancelar.setSize(130, 70);
         
     }
 
