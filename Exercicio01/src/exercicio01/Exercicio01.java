@@ -18,8 +18,8 @@ public class Exercicio01 implements Exercicio01BaseInterface {
 
     public Exercicio01() {
         gerarTela();
-        adicionarComponentes();
         instanciarComponentes();
+        adicionarComponentes();
         gerarLocalizacoes();
         gerarDimensoes();
         jFrame.setVisible(true);
@@ -41,16 +41,24 @@ public class Exercicio01 implements Exercicio01BaseInterface {
 
     @Override
     public void instanciarComponentes() {
+        jButtonSalvar = new JButton("Salvar");
+        jButtonCancelar = new JButton("Cancelar");
+        jLabelNome = new JLabel();
         
     }
 
     @Override
     public void gerarLocalizacoes() {
-        
+        jLabelNome.setLocation(10, 10);
+        jButtonSalvar.setLocation(50, 100);
+        jButtonCancelar.setLocation(100, 100);
     }
 
     @Override
     public void gerarDimensoes() {
+        jLabelNome.setSize(50, 50);
+        jButtonSalvar.setSize(50, 50);
+        jButtonCancelar.setSize(50, 50);
         
     }
 
