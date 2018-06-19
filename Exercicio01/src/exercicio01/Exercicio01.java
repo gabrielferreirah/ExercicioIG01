@@ -37,28 +37,29 @@ public class Exercicio01 implements Exercicio01BaseInterface {
     public void adicionarComponentes() {
         jFrame.add(jButtonSalvar);
         jFrame.add(jButtonCancelar);
+        jFrame.add(jLabelNome);
     }
 
     @Override
     public void instanciarComponentes() {
         jButtonSalvar = new JButton("Salvar");
         jButtonCancelar = new JButton("Cancelar");
-        jLabelNome = new JLabel();
+        jLabelNome = new JLabel("Nome");
         
     }
 
     @Override
     public void gerarLocalizacoes() {
         jLabelNome.setLocation(10, 10);
-        jButtonSalvar.setLocation(50, 100);
+        jButtonSalvar.setLocation(10, 100);
         jButtonCancelar.setLocation(100, 100);
     }
 
     @Override
     public void gerarDimensoes() {
-        jLabelNome.setSize(50, 50);
-        jButtonSalvar.setSize(50, 50);
-        jButtonCancelar.setSize(50, 50);
+        jLabelNome.setSize(50, 35);
+        jButtonSalvar.setSize(100, 100);
+        jButtonCancelar.setSize(100, 100);
         
     }
 
